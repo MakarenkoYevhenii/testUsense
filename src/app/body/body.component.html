@@ -1,0 +1,18 @@
+<div class="inputWraper">
+  <p>Введіть пароль:</p>
+  <input [value]="password" (input)="changeFn($event)" class="inputPassword" />
+</div>
+<div class="passworStrenghtWrapper">
+  <app-input
+    [StrongPassword]="firstCube"
+    class=" {{ StrongPassword() }} "
+  ></app-input>
+  <app-input
+    [StrongPassword]="secondCube"
+    class="{{ StrongPassword() }}"
+  ></app-input>
+  <app-input
+    [StrongPassword]="thirdCube"
+    class=" {{ StrongPassword() }}"
+  ></app-input>
+</div>

@@ -1,6 +1,11 @@
 <div class="inputWraper">
   <p>Введіть пароль:</p>
-  <input [value]="password" (input)="changeFn($event)" class="inputPassword" />
+  <input
+    [value]="password"
+    (input)="ChangeFn($event)"
+    class="inputPassword"
+    type="text"
+  />
 </div>
 <div class="passworStrenghtWrapper">
   <app-input
